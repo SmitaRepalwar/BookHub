@@ -1,5 +1,4 @@
 import {Component} from 'react'
-import {Link} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import Slider from 'react-slick'
 import Cookies from 'js-cookie'
@@ -33,12 +32,14 @@ class Home extends Component {
         Authorization: `Bearer ${jwtToken}`,
       },
     }
+
     const response = await fetch(
       'https://apis.ccbp.in/book-hub/top-rated-books',
       options,
     )
-    const data = await response.json()
     console.log(response)
+    const data = await response.json()
+
     if (response.ok === true) {
       this.setState({
         presentApiStatus: apiStatus.success,
