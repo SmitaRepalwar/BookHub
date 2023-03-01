@@ -1,0 +1,16 @@
+.footer-con {
+  line-height: 1.5;
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer-icon-con {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}

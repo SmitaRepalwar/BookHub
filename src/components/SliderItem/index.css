@@ -1,0 +1,16 @@
+.slide-image {
+  height: 150px;
+  width: 150px;
+}
+.slide-item-con {
+  height: 100%;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-text {
+  margin-top: 0px;
+}
